@@ -7,7 +7,7 @@ spring:
     password: mysql
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
 eureka:
   client:
     fetch-registry: true
