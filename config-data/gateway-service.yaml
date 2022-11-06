@@ -17,8 +17,8 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: import_data-service
-          uri: lb://import_data-service
+        - id: import-service
+          uri: lb://import-service
           predicates:
             - Path=/datos/**
         - id: justificativos-service
