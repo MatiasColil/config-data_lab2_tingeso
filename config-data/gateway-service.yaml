@@ -33,3 +33,4 @@ spring:
           uri: lb://report-service
           predicates:
             - Path=/reporte/**
+            - Path=/empleados/**
