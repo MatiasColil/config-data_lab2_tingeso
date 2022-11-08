@@ -33,5 +33,5 @@ spring:
         - id: report-service
           uri: lb://report-service
           predicates:
-            - Path=/reporte/**
+            - Path=/a/**
             - Path=/empleados/**
