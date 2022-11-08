@@ -30,8 +30,9 @@ spring:
           uri: lb://autorizaciones-service
           predicates:
             - Path=/autorizacion/**
-        - id: report-service
-          uri: lb://report-service
+
+        - id: reporte-service
+          uri: lb://reporte-service
           predicates:
-            - Path=/a/**
+            - Path=/reporte/**
             - Path=/empleados/**
