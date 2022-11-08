@@ -21,6 +21,7 @@ spring:
           uri: lb://import-service
           predicates:
             - Path=/datos/**
+            - Path=/entradas/**
         - id: justificativos-service
           uri: lb://justificativos-service
           predicates:
