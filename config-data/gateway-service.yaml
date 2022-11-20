@@ -35,3 +35,8 @@ spring:
           uri: lb://autorizaciones-service
           predicates:
             - Path=/autorizacion/**
+        - id: importe
+          uri: lb://importe
+          predicates:
+            - Path=/datos/**
+            - Path=/entradas/**
