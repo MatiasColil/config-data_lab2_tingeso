@@ -8,20 +8,20 @@ spring:
           enabled: true
       routes:
         - id: reporte-service
-          uri: http://reporte-service:8013
+          uri: lb://reporte-service
           predicates:
             - Path=/reporte/**
         - id: import-service
-          uri: http://import-service:8010
+          uri: lb://import-service
           predicates:
             - Path=/datos/**
             - Path=/entradas/**
         - id: justificativos-service
-          uri: http://justificativos-service:8011
+          uri: lb://justificativos-service
           predicates:
             - Path=/justificativos/**
         - id: autorizaciones-service
-          uri: http://autorizaciones-service:8012
+          uri: lb://autorizaciones-service
           predicates:
             - Path=/autorizacion/**
 eureka:
