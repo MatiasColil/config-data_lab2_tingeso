@@ -14,19 +14,19 @@ spring:
           enabled: true
       routes:
         - id: reporte-service
-          uri: http://reporte-service
+          uri: http://reporte-service:8013
           predicates:
             - Path=/reporte/**
         - id: import-service
-          uri: http://import-service
+          uri: http://import-service:8010
           predicates:
             - Path=/datos/**
             - Path=/entradas/**
         - id: justificativos-service
-          uri: http://justificativos-service
+          uri: http://justificativos-service:8011
           predicates:
             - Path=/justificativos/**
         - id: autorizaciones-service
-          uri: http://autorizaciones-service
+          uri: http://autorizaciones-service:8012
           predicates:
             - Path=/autorizacion/**
