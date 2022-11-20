@@ -13,8 +13,8 @@ spring:
     gateway:
       globalcors:
         corsConfigurations:
-          "[/*]":
-            allowedOrigins: ""
+          "[/**]":
+            allowedOrigins: "*"
             allowedHeaders: "*"
             allowedMethods:
               - GET
