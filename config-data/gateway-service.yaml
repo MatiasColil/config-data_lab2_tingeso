@@ -40,3 +40,9 @@ spring:
           uri: lb://autorizaciones-service
           predicates:
             - Path=/autorizacion/**
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: ${EUREKA_URL:http://localhost:8761/eureka}
