@@ -22,6 +22,7 @@ spring:
       discovery:
         locator:
           enabled: true
+          lowerCaseServiceId: true
       routes:
         - id: IMPORTE
           uri: lb://IMPORTE/
