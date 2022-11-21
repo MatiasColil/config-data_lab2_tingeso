@@ -24,8 +24,8 @@ spring:
           enabled: true
           lowerCaseServiceId: true
       routes:
-        - id: IMPORTE
-          uri: lb://IMPORTE/
+        - id: restotot
+          uri: lb://testeo/
           predicates:
             - Path=/datos/**
             - Path=/entradas/**
