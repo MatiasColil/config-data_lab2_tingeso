@@ -27,7 +27,7 @@ spring:
         - id: restotot
           uri: lb://testeo/
           predicates:
-            - Path=/datos/**
+            - Path=/test/**
             - Path=/entradas/**
         - id: reporte-service
           uri: lb://reporte-service
