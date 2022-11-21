@@ -24,7 +24,7 @@ spring:
           enabled: true
       routes:
         - id: IMPORTE
-          uri: lb://IMPORTE//
+          uri: lb://IMPORTE/
           predicates:
             - Path=/datos/**
             - Path=/entradas/**
