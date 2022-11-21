@@ -28,3 +28,15 @@ spring:
           uri: lb://importaciones-service
           predicates:
             - Path=/test/**, /entradas/**
+        - id: reporte-service
+          uri: lb://reporte-service
+          predicates:
+            - Path=/reporte/**
+        - id: justificativos-service
+          uri: lb://justificativos-service
+          predicates:
+            - Path=/justificativos/**
+        - id: autorizaciones-service
+          uri: lb://autorizaciones-service
+          predicates:
+            - Path=/autorizacion/**
