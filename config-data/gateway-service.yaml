@@ -23,8 +23,8 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: importe
-          uri: lb://importe
+        - id: IMPORTE
+          uri: lb://IMPORTE//
           predicates:
             - Path=/datos/**
             - Path=/entradas/**
