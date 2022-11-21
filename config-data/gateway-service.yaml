@@ -27,5 +27,4 @@ spring:
         - id: importaciones-service
           uri: lb://importaciones-service
           predicates:
-            - Path=/test/**
-            - Path=/entradas/**
+            - Path=/test/**, /entradas/**
