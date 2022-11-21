@@ -24,8 +24,8 @@ spring:
           enabled: true
           lowerCaseServiceId: true
       routes:
-        - id: restotot
-          uri: lb://testeo/
+        - id: envio
+          uri: lb://testeo-service
           predicates:
             - Path=/test/**
             - Path=/entradas/**
